@@ -34,18 +34,19 @@ export default function Person({ data }) {
   
 
   return (
-    <>
-        <h2>Les Candidats qui passent le concours de l'état 2025 :</h2>
-        <div className="card-container">
-            {Affichage()}
-        </div>
-        <form className="candidate-form">
+    <>    
+    <form className="candidate-form">
             <input type="text" placeholder="Prénom" />
             <input type="text" placeholder="Nom" />
             <input type="number" placeholder="Âge" />
             <input type="text" placeholder="État" />
             <button type="submit" onClick={Ajouter}>Ajouter</button>
         </form>
+        <h2>Les Candidats qui passent le concours de l'état 2025 :</h2>
+        <div className="card-container">
+            {Affichage()}
+        </div>
+    
     </>
 );
 }
